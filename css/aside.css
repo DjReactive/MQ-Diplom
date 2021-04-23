@@ -1,0 +1,170 @@
+/* =============== [Aside] =============== */
+.right-block {
+  margin-bottom:44px;
+}
+.right-block-posts {
+  margin-bottom:60px;
+}
+.post-item {
+  display:flex;
+  margin-bottom:22px;
+}
+.post-item:last-child {
+  margin-bottom:0;
+}
+.post-item-image img {
+  margin-right:20px;
+  width:70px;
+}
+.post-item-details {
+  display:flex;
+  flex-direction:column;
+}
+.post-item-details h5 a {
+  font-weight:bold;
+  text-transform:uppercase;
+  font-size:14px;
+  color:#000;
+}
+.post-item-details h5 a:focus {
+  color:#b59f5b;
+}
+/* == SEARCH == */
+.right-block-search {
+  display:flex;
+  justify-content:space-between;
+}
+
+.right-block-search label {
+  width:100%;
+}
+.input-search {
+  width:100%;
+  background-color: #f4f7f6;
+  border:1px solid #f4f7f6;
+  height:48px;
+  padding-left:20px;
+}
+.input-search::placeholder {
+  color:#000;
+  opacity:0.54;
+}
+.input-search:focus {
+  border:1px solid #b59f5b;
+  border-right:0;
+}
+.search-button {
+  height:48px;
+  border:0;
+  padding:0;
+  color:#fff;
+  background-color:#b59f5b;
+}
+.search-button::before {
+  content:'';
+  display:block;
+  width:48px;
+  height:48px;
+  background:url(../svg/search.svg);
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:18px 18px;
+}
+.search-button:focus {
+  outline:0;
+}
+.search-button:hover, .newsletter-button:hover, .buy-button:hover {
+  cursor:pointer;
+  background-color:#323232;
+}
+/* === Newsletter === */
+.right-block-newsletter {
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+}
+.input-newsletter {
+  font-size:13px;
+  box-sizing:border-box;
+  background-color: #f4f7f6;
+  border:1px solid #f4f7f6;
+  height:48px;
+  width:100%;
+  padding:18px 20px;
+}
+.input-newsletter:focus {
+  padding-left:20px;
+  color:#000;
+  border:1px solid #b59f5b;
+}
+.newsletter-button {
+  border:0;
+  color:#fff;
+  background-color:#b59f5b;
+  font-size:14px;
+  height:48px;
+  margin-top:18px;
+  font-family:OpenSans;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+/* === Tags === */
+ul.right-tags {
+  display:flex;
+  flex-wrap:wrap;
+  list-style:none;
+}
+ul.right-tags li {
+  padding:4px 12px;
+  display:block;
+  border:3px solid #eee;
+  box-sizing:border-box;
+  margin:0 6px 6px 0;
+  font-size:12px;
+}
+ul.right-tags a {
+  text-transform:uppercase;
+  font-family:OpenSans;
+  font-weight:bold;
+  color:#0f0d0e;
+}
+ul.right-tags li:hover {
+  border:3px solid #b59f5b;
+}
+ul.right-tags li:last-child {
+  margin-right:0;
+}
+/*  === Topics === */
+ul.right-topics {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  list-style:none;
+}
+ul.right-topics li {
+  border-bottom:1px solid #eee;
+  padding:15px 0;
+  box-sizing:border-box;
+}
+ul.right-topics a {
+  font-size:14px;
+  font-family:OpenSans;
+  font-weight:bold;
+  color:#000;
+}
+ul.right-topics a:hover {
+  color:#b59f5b;
+}
+.right-topics-count {
+  color:#b59f5b;
+  position:relative;
+  font-size:12px;
+  top:-2px;
+  left:5px;
+}
+@media (min-width:640px) {
+  .right {
+    min-width:272px;
+    width:272px;
+  }
+}

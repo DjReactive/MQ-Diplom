@@ -1,0 +1,56 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Bold.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  box-sizing:border-box;
+}
+body {
+  font-family: OpenSans;
+  color: #0f0d0e;
+}
+body,ul,h1,h3,h4,h5 {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration:none;
+}
+input,select,textarea,button {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  font-family:OpenSans;
+  margin:0;
+  padding:0;
+}
+input,select,textarea,button:focus {
+  outline: 0;
+}
+
+/* Общие классы */
+.date {
+  font-size:12px;
+  opacity:0.54;
+}
+.author {
+  font-size:12px;
+  padding-left:12px;
+  font-family:OpenSans;
+  font-weight:bold;
+}
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  left:0;
+  top:0;
+}

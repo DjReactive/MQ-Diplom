@@ -1,0 +1,147 @@
+/* =============== [Main] =============== */
+.block-title {
+  margin-bottom:20px;
+  text-align:center;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.block-title::after {
+  content: '';
+  display:flex;
+  border-bottom: 3px solid #b59f5b;
+  background-color:#b59f5b;
+  width:66px;
+  opacity:0.4;
+  margin:8px auto 0 auto;
+}
+.block-title h3 {
+  font-size:16px;
+}
+.block-title h4 {
+  font-size:16px;
+}
+.post-tags-ul {
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-wrap:wrap;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.post-tags-ul li {
+  list-style:none;
+  font-size:14px;
+  padding-right:20px;
+}
+.post-tags-ul li:last-child {
+  padding-right:0;
+}
+.post-tags-ul li a {
+  color:#b59f5b;
+}
+.post-tags-ul li a:hover {
+  border-bottom:2px solid #b59f5b;
+}
+
+/* ========= CONTENT ==========*/
+.content {
+  padding:0 15px;
+}
+.main-content {
+  display:flex;
+  flex-direction:column;
+}
+.news-post {
+  padding-bottom:20px;
+  margin-bottom:35px;
+  border-bottom:3px solid #eeeeee;
+}
+.news-post-content {
+  padding-top:10px;
+}
+.news-post-image img {
+  width:100%;
+}
+.news-post-title h3 a {
+  color:#0f0d0e;
+  font-size:16px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+.news-post-title h3 a:hover {
+  color:#b59f5b;
+}
+.news-post-title h3 {
+  margin:10px 0 20px 0;
+}
+.news-post-details {
+  margin-bottom:15px;
+}
+.news-post-desc {
+  font-size:14px;
+  line-height:20px;
+}
+.news-post-desc p {
+  margin:0;
+}
+
+@media (min-width:640px) {
+  .content {
+    padding:0 35px;
+  }
+  .main-content {
+    flex-direction:row;
+  }
+  .block-title h3 {
+    font-size:18px;
+  }
+  .block-title h4 {
+    font-size:14px;
+  }
+  .news {
+    margin-right:35px;
+  }
+  .news-post-image img {
+    max-width:381px;
+  }
+}
+@media (min-width:1200px) {
+  .block-title {
+    margin:60px 0 27px;
+  }
+  .block-title h3 {
+    font-size:20px;
+  }
+  .main-content .block-title:first-child {
+    margin-top:0;
+  }
+  .content {
+    width:1200px;
+    padding:40px 15px;
+    margin:0 auto;
+  }
+  .news-post {
+    display:flex;
+    padding-bottom:0;
+    margin-bottom:0;
+    border-bottom:0;
+  }
+  .news-post:nth-of-type(n+2) {
+    margin-top:60px;
+  }
+  .news-post-image img {
+    width:381px;
+    padding-right:30px;
+  }
+  .news-post-image:hover ~ .news-post-title h3 a {
+    background-color:#00d;
+  }
+  .news-post-desc {
+    font-size:15px;
+    line-height:22px;
+  }
+  .news-post-title h3 a {
+    font-size:20px;
+    line-height:24px;
+  }
+}
